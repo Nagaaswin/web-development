@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image: url('bg image.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+}
+h1 {
+	text-align: center;
+	color: skyblue;
+}
+p{
+	font-size: 25px;
+}
+
+.divmain{
+	width :1400px;
+	margin: 0 auto;
+}
+.divinput{	
+	width:600px;
+	margin-left: 700px;
+	height: 50px;
+}
+.divcontent
+{
+	width:700px;
+	float: left;
+	height: 50px;
+}
+
+#header{
+	font-size: 25px;
+	color: chocolate;
+}
+input{
+	background-color:blanchedalmond;
+}
+
+#submitbutton{
+	background-color: greenyellow;
+	height: 30px;
+	
+}
+
+#ResetButton{
+	background-color: firebrick;
+	height: 30px;
+}

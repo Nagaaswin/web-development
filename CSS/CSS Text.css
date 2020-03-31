@@ -1,0 +1,52 @@
+body {
+  color: blue;
+}
+
+h1 {
+  color: green;
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+
+div {
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+
+p.indent {
+  text-indent: 50px;
+}
+
+p.ex1 {
+  direction: rtl;
+}
+
+h1.shadow {
+  text-shadow: 3px 2px red;
+}

@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Table</title>
+<link href="CSS Table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>CSS Table Example</h1>
+<h2>Add a border to a table:</h2>
+<table class="normal">
+  <tr>
+    <th class="normal">Firstname</th>
+    <th class="normal">Lastname</th>
+  </tr>
+  <tr>
+    <td class="normal">Peter</td>
+    <td class="normal">Griffin</td>
+  </tr>
+  <tr>
+    <td class="normal">Lois</td>
+    <td class="normal">Griffin</td>
+  </tr>
+</table>
+<p><b>Note:</b> If a !DOCTYPE is not specified, the border-collapse property can produce unexpected results 
+  in IE8 and earlier versions.</p>
+<h2>Single Border Around The Table:</h2>
+<table class="singleBorder">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+	<h2>The width and height Properties:</h2>
+<p>Set the width of the table, and the height of the table header row:</p>
+
+<table class="heightNWidth">
+  <tr>
+    <th class="heightNWidth">Firstname</th>
+    <th class="heightNWidth">Lastname</th>
+    <th class="heightNWidth">Savings</th>
+  </tr>
+  <tr>
+    <td class="heightNWidth">Peter</td>
+    <td class="heightNWidth">Griffin</td>
+    <td class="heightNWidth">$100</td>
+  </tr>
+  <tr>
+    <td class="heightNWidth">Lois</td>
+    <td class="heightNWidth">Griffin</td>
+    <td class="heightNWidth">$150</td>
+  </tr>
+  <tr>
+    <td class="heightNWidth">Joe</td>
+    <td class="heightNWidth">Swanson</td>
+    <td class="heightNWidth">$300</td>
+  </tr>
+  <tr>
+    <td class="heightNWidth">Cleveland</td>
+    <td class="heightNWidth">Brown</td>
+    <td class="heightNWidth">$250</td>
+  </tr>
+</table>
+	<h2>The text-align Property</h2>
+<p>This property sets the horizontal alignment (like left, right, or center) of the content in th or td:</p>
+
+<table class="text">
+  <tr>
+  <th class="text">Firstname</th>
+  <th class="text">Lastname</th>
+  <th class="text">Savings</th>
+  </tr>
+  <tr>
+    <td class="heightNWidth">Peter</td>
+    <td class="heightNWidth">Griffin</td>
+    <td class="heightNWidth">$100</td>
+  </tr>
+  <tr>
+    <td class="heightNWidth">Lois</td>
+    <td class="heightNWidth">Griffin</td>
+    <td class="heightNWidth">$150</td>
+  </tr>
+  <tr>
+    <td class="heightNWidth">Joe</td>
+    <td class="heightNWidth">Swanson</td>
+    <td class="heightNWidth">$300</td>
+  </tr>
+  <tr>
+    <td class="heightNWidth">Cleveland</td>
+    <td class="heightNWidth">Brown</td>
+    <td class="heightNWidth">$250</td>
+  </tr>
+</table>
+	<h2>Responsive Table</h2>
+<p>A responsive table will display a horizontal scroll bar if the screen is too 
+small to display the full content. Resize the browser window to see the effect:</p>
+<p>To create a responsive table, add a container element (like div) with <strong>overflow-x:auto</strong> around the table element:</p>
+
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

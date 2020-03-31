@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<body>
+<h1> This is an example for HTML Forms</h1>
+<form target="_blank" method="Post">
+<fieldset>
+<legend> Personal Details</legend>
+
+<p>Below is the example for text field in form:</p>
+First name Lastname:
+<br>
+<input type="text" name="firstname">
+<input type="text" name="lastname"><br>
+
+<p>Below is the example for the radio button in the form:</p>
+Relationship Status:<br>
+<input type="radio" name="Single" value="Single" checked>Single
+<input type="radio" name="Committed" value="committed">Committed
+
+<p>Below is the example of the select element:</p>
+Gender:
+<select name="gender">
+	<option value="null"></option>
+<option value="Male">Male</option>
+<option value="female">female</option>
+<option value="transgender">Transgender</option>
+</select>
+
+<p> Below is the example for checkbox type:</p>
+Language known:
+<input type="checkbox" name="lan1" value="Tamil">Tamil
+<input type="checkbox" name="lan2" value="Tamil">English
+
+<p> Below is the example for color type:</p>
+Favourite color:
+<input type="color" name="favcolor">
+
+<p> Below is the example for Date type:</p>
+Date of Birth:
+<input type="date" name="birthdate">
+
+<p> Below is the example for Email type:</p>
+Email id:
+<input type="email" name="Email">
+
+<p> Below is the example for tel type:</p>
+phone number:
+<input type="tel" name="phone number" pattern="[0-9]{10}">
+
+<p> Below is the example for Button element:</p>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+<p> Below is the example for Datalist element:</p>
+Blood Group:
+<input list="Blood group">
+<datalist id="Blood group">
+<option value="A+ve">
+<option value="B+ve">
+<option value="O+ve">
+<option value="A-ve">
+<option value="B-ve">
+<option value="O-ve">
+</datalist>
+
+<p> Below is the example for Text-area element:</p>
+Short Description about yourself:<br>
+<textarea name="message" rows="10" cols="50"></textarea>
+
+<p> Below is the example for Password element:</p>
+Create a password for your details:<br>
+<input type="password" name="password"><br>
+
+<p> Below is the example for file element:</p>
+Resume:
+<input type="file" name="Resume">
+
+<p> Below is the example for Month element:</p>
+Expected month of joining:
+<input type="month" name="joindate" min="2020-01">
+
+<p> Below is the example for number element:</p>
+Expected Salary:
+<input type="number" name="Salary">
+
+
+<p> Below is the example for submit  and reset button:</p>
+<input type="reset" value="reset">
+<input type="submit" value="submit">
+
+</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url('output_bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+}
+
+h1,h4{
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	color:coral;
+}
+
+div{
+	padding-left: 250px;
+}
+
+
+table#t01 tr:nth-child(even){
+	background-color:#eee;
+}
+table#t01 tr:nth-child(odd){
+	background-color:#fff;
+}
+table#t01 th{
+	background-color:black;
+	color:white;
+	font-size: 18px;
+	text-align: left;
+}
+
+table#t01 caption{
+	font-size: 30px;
+	background-color:#E8FF02;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	color: black;
+}
+
+table#t01 td{
+	color: black;
+	text-align: center;
+	font-size: 18px;
+}
+
+table#t02 tr:nth-child(even){
+	background-color:#eee;
+}
+table#t02 tr:nth-child(odd){
+	background-color:#fff;
+}
+table#t02 th{
+	background-color:black;
+	color:white;
+	font-size: 18px;
+	text-align: left;
+}
+
+table#t02 caption{
+	font-size: 30px;
+	background-color:#FD9E15;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	color: black;
+}
+
+table#t02 td{
+	color: black;
+	text-align: center;
+	font-size: 18px;
+}
+
+table#t03 tr:nth-child(even){
+	background-color:#eee;
+}
+table#t03 tr:nth-child(odd){
+	background-color:#fff;
+}
+table#t03 th{
+	background-color:black;
+	color:white;
+	font-size: 18px;
+	text-align: left;
+}
+
+table#t03 caption{
+	font-size: 30px;
+	background-color:#F101BC;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	color: black;
+}
+
+table#t03 td{
+	color: black;
+	text-align: center;
+	font-size: 18px;
+}

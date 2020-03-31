@@ -1,0 +1,55 @@
+#ulDisc{
+list-style-type :disc;
+}
+
+#ulCircle{
+list-style-type :circle;
+}
+
+#ulSquare{
+list-style-type :square;
+}
+
+#ulNone{
+list-style-type :none;
+}
+
+body{
+background-image:url('cup_ocean_sand_133354_1920x1080.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:cover;
+}
+
+h1{
+	text-align : center;
+	text-decoration:underline;
+}
+
+h3{
+	text-decoration:underline;
+}
+
+#ulCss {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+#liCss{
+  float: left;
+}
+
+#lilinkCss {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+#lilinkCss:hover {
+  background-color: #111111;
+}

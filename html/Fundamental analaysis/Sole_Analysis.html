@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sole_Anlysis</title>
+	<link href="Sole_Analysis_Styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1>Fundamental Analysis</h1>
+	
+<form action="http://localhost:8080/Fundamental_Anlaysis/Main_Input" method="post" style="font-size:20px;" >
+  <div class="divmain" id ="header">
+    <div class="divcontent">Sl.No &nbsp; &nbsp; &nbsp; &nbsp; Content </div>
+    <div class="divinput">  Company Details</div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 1. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Sector : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Sector">
+    </div>
+  </div>
+	<div class="divmain">
+    <div class="divcontent"> 2. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Industry : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Industry">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 3. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Company Name with year (name_year) : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Company_Name">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 4. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Company Symbol : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Company_Symbol">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 5. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Calculation Type (1.Ones 2.Thousands 3.Lakhs 4.Millions 5.Crores) :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Cal_Type">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 6. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Total Revenue : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Total_Revenue">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 7. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Net Sales :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Net_Sales">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 8. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Other Income :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Other_Income">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 9. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Total Expenses : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Total_Expenses">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 10. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Cost of Materials Consumed : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Cost_Of_Materials_Consumed">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 11. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Purchase of Stock in-Trade : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Purchase_Of_Stock_In-Trade">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 12. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Power And Fuel Consumption : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Power_And_Fuel_Consumption">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 13. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Consumption of Stores And Spare parts : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Consumption_Of_Stores_And_Spare_parts">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 14. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Finance Cost :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Finance_Cost">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 15. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Depreciation And Amortization :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Depreciation_And_Amortization">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 16. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Exceptional Items Before Tax :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Exceptional_Items_Before_Tax">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 17. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Applicable Taxes : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Exceptional_Applicable_Taxes">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 18. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Share Price : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Share_Price">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 19. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Total Equality Shares :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Total_Equality_Shares">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 20. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Face Values :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Face_Values">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 21. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Shareholder's Fund And Total Equity : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Shareholders_Fund_And_Total_Equity">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 22. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reevaluation Reserves : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Revaluation_reserves">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 23. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Previous year Shareholders fund : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Previous_Year_Shareholders_Fund">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 24. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Non-Current Liabilities : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Non_Current_Liabilities">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 25. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Long-Term Borrowings : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Long_Term_Borrowings">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 26. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Current Liabilities : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Current_Liabilities">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 27. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Short-Term Borrowings : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Short_Term_Borrowings">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 28. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Previous Year Non-Current Liabilities :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Previous_Year_Non_Current_Liabilities">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 29. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Previous Year Current Liabilities :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Previous_Year_Current_Liabilities">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 30. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Non-Current Assets :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Non_Current_Assets">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 31. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Fixed Assets : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Fixed_Assets">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 32. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Current Assets : </div>
+    <div class="divinput">
+      <input type="text" name="company1_Current_Assets">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 33. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Inventory :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Inventory">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent">34. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Trade Receivables :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Trade_Receivables">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent">35. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Previous Year Non-Current Assets :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Previous_Year_Non_Current_Assets">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 36. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Previous Year Fixed Assets :</div>
+    <div class ="divinput">
+      <input type="text" name="company1_Previous_Year_Fixed_Assets">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 37. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Previous Year Current Assets :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Previous_Year_Current_Assets">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 38. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Previous Year Inventory :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Previous_Year_Inventory">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent">39. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Previous Year Trade Receivable :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Previous_Year_Trade_Receivable">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent">40. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cash Flow From Operating Activity :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Cash_Flow_From_Operating_Activity">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 41. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Capital Expenditure :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Capital_Expenditure">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent">42. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cash Flow Investing Activities :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Cash_Flow_Investing_Activities">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent"> 43. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cash Flow Financial Activities :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Cash_Flow_Financial_Activities">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent">44. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cash And Cash Equivalent At Year Opening :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Cash_And_Cash_Equivalent_At_Year_Opening">
+    </div>
+  </div>
+  <div class="divmain">
+    <div class="divcontent">45. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Effect Of Foreign Exchange Of Cash And Cash Equivalent :</div>
+    <div class="divinput">
+      <input type="text" name="company1_Effect_Of_Foreign_Exchange_Of_Cash_And_Cash_Equivalent">
+    </div>
+  </div>
+  <div style="padding-left: 620px;">
+    <input id="submitbutton" type="submit" name="Submit">
+    &emsp;
+    <input id="ResetButton" type="reset" name="Reset">
+  </div>
+</form>
+
+</body>
+</html>
