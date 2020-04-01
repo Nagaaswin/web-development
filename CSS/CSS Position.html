@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Position</title>
+    <link rel="stylesheet" href="CSS Position.css">
+  </head>
+  <body>
+    <h1>CSS Layout: Position Property</h1>
+    <h2>position: static;</h2>
+
+<p>An element with position: static; is not positioned in any special way; it is
+always positioned according to the normal flow of the page:</p>
+
+<div class="static">
+  This div element has position: static;
+</div>
+<h2>position: relative;</h2>
+
+<p>An element with position: relative; is positioned relative to its normal position:</p>
+
+<div class="relative">
+This div element has position: relative;
+</div>
+<h2>position: fixed;</h2>
+
+<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+<div class="fixed">
+This div element has position: fixed;
+</div>
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+<p>Note: IE/Edge 15 and earlier versions do not support sticky position.</p>
+
+<div class="sticky">I am sticky!</div>
+
+<div>
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+<h2>Image Text</h2>
+<p>Add some text to an image in the top right corner:</p>
+
+<div class="container">
+  <img src="cup_ocean_sand_133354_1920x1080.jpg" alt="Cinque Terre" width="1000" height="300">
+  <div class="topright">Top Right</div>
+  <div class="topleft">Top Left</div>
+  <div class="bottomleft">Bottom Left</div>
+  <div class="bottomright">Bottom Right</div>
+  <div class="center">Centered</div>
+</div>
+  </body>
+</html>
