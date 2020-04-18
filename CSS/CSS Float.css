@@ -1,0 +1,16 @@
+
+img.right {
+  float: right;
+}
+
+img.left {
+  float: left;
+}
+
+img.No {
+  float: none;
+}
+
+h1{
+  text-align: center;
+}
