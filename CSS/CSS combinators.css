@@ -1,0 +1,19 @@
+h1{
+  text-align: center;
+}
+
+.Descendant p {
+  background-color: yellow;
+}
+
+.Child > p {
+  background-color: red;
+}
+
+.adjacent_sibling + p {
+  background-color: green;
+}
+
+.general_sibling ~ p{
+  background-color: blue;
+}

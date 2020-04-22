@@ -1,0 +1,55 @@
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+h1{
+  text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vertical_padding {
+  padding: 70px 0;
+  border: 3px solid green;
+}
+
+.vertical_lineheight {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+}
+
+.vertical_lineheight p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vertical_transform {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.vertical_transform p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.vertical_flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}

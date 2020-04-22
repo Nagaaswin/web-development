@@ -1,0 +1,51 @@
+h1{
+  text-align: center;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+div {
+  background-color: green;
+  color: black;
+  padding: 25px;
+  text-align: center;
+}
+
+div:hover {
+  background-color: blue;
+}
+.tooltip p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div.tooltip:hover p {
+  display: block;
+}
+
+p i:first-child {
+  color: blue;
+}
+
+q:lang(no) {
+  quotes: "~" "~";
+}

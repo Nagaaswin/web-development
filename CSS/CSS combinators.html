@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS combinators</title>
+    <link rel="stylesheet" href="CSS combinators.css">
+  </head>
+  <body>
+    <h1>CSS combinators</h1>
+    <h2>Descendant selector:</h2>
+    <div class="Descendant">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+<h2>Child selector:</h2>
+<div class="Child">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
+  <p>Paragraph 4 in the div.</p>
+</div>
+
+<p>Paragraph 5. Not in a div.</p>
+<p>Paragraph 6. Not in a div.</p>
+
+<h2>Adjacent sibling selector:</h2>
+<div class="adjacent_sibling">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p>
+
+<h2>Genral sibiling selector:</h2>
+<p>Paragraph 1.</p>
+<div class="general_sibling">
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+  </body>
+</html>
