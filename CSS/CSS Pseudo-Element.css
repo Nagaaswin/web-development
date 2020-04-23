@@ -1,0 +1,29 @@
+h1{
+  text-align: center;
+}
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+
+h3::before {
+  content: url(list.png);
+}
+
+h3::after {
+  content: url(list.png);
+}
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
