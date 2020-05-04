@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Navigation bar</title>
+    <link rel="stylesheet" href="CSS Navigation bar.css">
+  </head>
+  <body>
+    <h1>CSS Navigation bar</h1>
+    <h2>Basic Nav bar:</h2>
+
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
+
+<h2>Upgraded basic version:</h2>
+
+<p>In this example, we remove the bullets from the list, and its default padding and margin.</p>
+
+<ul class="basic">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<h2>Vertical nav bar making whole area clickable:</h2>
+<ul class="verticalBasic">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p>A background color is added to the links to show the link area.</p>
+<p>Notice that the whole link area is clickable, not just the text.</p>
+<h2>Vertical nav bar with hover feature:</h2>
+<ul class="verticalHover">
+ <li><a href="#home">Home</a></li>
+ <li><a href="#news">News</a></li>
+ <li><a href="#contact">Contact</a></li>
+ <li><a href="#about">About</a></li>
+</ul>
+<h2>Vertical nav bar with added active link:</h2>
+<p>In this example, we create an "active" class with a green background color and a white text. The class is added to the "Home" link.</p>
+
+<ul class="verticalActive">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<ul class="fixedFullheightNavBar">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+<h2>Basic horizontal navigation bar using inline:</h2>
+<ul class="horizontalBasic">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<h2>Basic horizontal navigation bar using float:</h2>
+<ul class="horizontalBasicFloat">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p><b>Note:</b> If a !DOCTYPE is not specified, floating items can produce unexpected results.</p>
+<p>A background color is added to the links to show the link area. The whole link area is clickable, not just the text.</p>
+<p><b>Note:</b> overflow:hidden is added to the ul element to prevent li elements from going outside of the list.</p>
+
+<h2>Horizontal Nav Bar with all features:</h2>
+<ul class="horizontalBarFullFeatures">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+ </body>
+</html>

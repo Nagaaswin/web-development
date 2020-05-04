@@ -1,0 +1,146 @@
+h1{
+  text-align: center;
+}
+ul.basic{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.verticalBasic{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+
+ul.verticalBasic li a {
+  display: block;
+  background-color: #dddddd;
+}
+
+ul.verticalHover {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+ul.verticalHover li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ul.verticalHover li a:hover {
+  background-color: #555;
+  color: white;
+}
+ul.verticalActive {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+ul.verticalActive li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ul.verticalActive li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ul.verticalActive li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+ul.fixedFullheightNavBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+ul.fixedFullheightNavBar li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ul.fixedFullheightNavBar li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ul.fixedFullheightNavBar li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+ul.horizontalBasic {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.horizontalBasic li {
+  display: inline;
+}
+
+ul.horizontalBasicFloat {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.horizontalBasicFloat li {
+  float: left;
+}
+
+ul.horizontalBasicFloat li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+ul.horizontalBarFullFeatures {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.horizontalBarFullFeatures li {
+  float: left;
+}
+
+ul.horizontalBarFullFeatures li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.horizontalBarFullFeatures li a:hover:not(.active) {
+  background-color: #111;
+} 
+
+ul.horizontalBarFullFeatures .active {
+  background-color: #4CAF50;
+}
