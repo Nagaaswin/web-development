@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="text-align: center;">JavaScript Objects</h1>
+
+<p id="demo"></p>
+
+<h2>Accessing objects:</h2>
+<p>There are two different ways to access an object property.</p>
+
+<p>You can use person.property or person["property"].</p>
+
+<p id="acc"></p>
+
+<h2>Objects Functions:</h2>
+<p>An object method is a function definition, stored as a property value.</p>
+
+<p id="objfun"></p>
+<script>
+// Create an object:
+var person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+// Create an object:
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+// Display some data from the object:
+document.getElementById("acc").innerHTML =
+person["firstName"] + " " + person["lastName"];
+
+// Display data from the object:
+document.getElementById("objfun").innerHTML = person.fullName();
+</script>
+
+</body>
+</html>
