@@ -116,7 +116,7 @@ input:focus {
   width: 80%;
   top: 30vh;
   left: 10%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 8px rgba(92, 73, 73, 0.26);
   display: none;
 }
 
