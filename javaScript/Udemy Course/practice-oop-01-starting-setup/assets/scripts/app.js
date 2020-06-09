@@ -171,15 +171,16 @@ class App {
       activeProjectsList.addProject.bind(activeProjectsList)
     );
 
-    document
-      .getElementById('analytics')
-      .addEventListener('click', this.startAnalytics);
+    const timerID = setTimeout(this.startAnalytics, 3000);
+    document.getElementById('analytics').addEventListener('click', () => {
+      clearTimeout(timerID);
+    });
   }
   static startAnalytics() {
     const dynamicScript = document.createElement('script');
     dynamicScript.src = 'assets/scripts/analyticsScript.js';
     dynamicScript.defer = true;
-
+    
     document.head.append(dynamicScript);
   }
 }
