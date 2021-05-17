@@ -1,0 +1,6 @@
+[submodule "learningAngular"]
+	path = learningAngular
+	url = git@github.com:Nagaaswin/learningAngular.git
+[submodule "Learning-Angular"]
+	path = Learning-Angular
+	url = git@github.com:Nagaaswin/Learning-Angular.git
