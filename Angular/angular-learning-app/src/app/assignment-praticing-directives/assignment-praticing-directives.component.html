@@ -1,0 +1,11 @@
+<button (click)="onDisplayDetails()">Display Details</button>
+<br />
+<p *ngIf="display">My Name = 'Name'</p>
+<br />
+<div
+  *ngFor="let log of buttonClicks"
+  [ngStyle]="{ backgroundColor: log >= 5 ? 'blue' : 'transaparent' }"
+  [ngClass]="{ online: log >= 5 }"
+>
+  buttonClicked
+</div>
