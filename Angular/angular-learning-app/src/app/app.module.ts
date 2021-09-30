@@ -9,6 +9,9 @@ import { AssignmentSuccessAlertComponent } from './assignment-success-alert/assi
 import { FormsModule } from '@angular/forms';
 import { AssignmentBindingComponent } from './assignment-binding/assignment-binding.component';
 import { AssignmentPraticingDirectivesComponent } from './assignment-praticing-directives/assignment-praticing-directives.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { AssignmentPraticingDirectivesComponent } from './assignment-praticing-d
     AssignmentWarningAlertComponent,
     AssignmentSuccessAlertComponent,
     AssignmentBindingComponent,
-    AssignmentPraticingDirectivesComponent
+    AssignmentPraticingDirectivesComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,
