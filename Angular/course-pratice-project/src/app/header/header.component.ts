@@ -6,13 +6,6 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  collapsed: boolean = true;
-  @Output() selectedHeader = new EventEmitter<string>();
-  constructor() {}
-
   ngOnInit(): void {}
-
-  selectHeader(header: string) {
-    this.selectedHeader.emit(header);
-  }
+  collapsed: boolean = true;
 }

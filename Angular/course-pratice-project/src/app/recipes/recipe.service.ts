@@ -13,6 +13,7 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     new Recipe(
+      1,
       'Chicken Briyani',
       'A best North indian dish',
       'https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe-500x500.jpg',
@@ -23,6 +24,7 @@ export class RecipeService {
       ]
     ),
     new Recipe(
+      2,
       'Mutton Briyani',
       'A best South indian dish',
       'https://www.cubesnjuliennes.com/wp-content/uploads/2021/03/Best-Mutton-Biryani-Recipe.jpg',
@@ -40,5 +42,9 @@ export class RecipeService {
 
   toShoppingList(recipe: Recipe) {
     this.shoppingListService.onIngredientsAdd(recipe.ingredients);
+  }
+
+  getRecipeById(id: number) {
+    return this.recipes[id - 1];
   }
 }
