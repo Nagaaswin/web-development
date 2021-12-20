@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { DataStorageService } from '../shared/data-storage.service';
 import { Recipe } from './recipe.model';
 import { RecipeService } from './recipe.service';
 
@@ -7,9 +9,6 @@ import { RecipeService } from './recipe.service';
   templateUrl: './recipes.component.html',
   styleUrls: ['./recipes.component.css'],
 })
-export class RecipesComponent implements OnInit {
+export class RecipesComponent {
   recipe: Recipe;
-  constructor(private recipeService: RecipeService) {}
-
-  ngOnInit(): void {}
 }
