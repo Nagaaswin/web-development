@@ -1,82 +1,74 @@
-import {
-  Component,
-  ElementRef,
-  EventEmitter,
-  OnDestroy,
-  OnInit,
-  Output,
-} from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { Ingredient } from 'src/app/shared/ingredient.model';
-import { ShoppingListService } from '../shopping-list.service';
+import { Store } from '@ngrx/store';
+
+import { Ingredient } from '../../shared/ingredient.model';
+import * as ShoppingListActions from '../store/shopping-list.actions';
+import * as fromApp from '../../store/app.reducer';
 
 @Component({
   selector: 'app-shopping-edit',
   templateUrl: './shopping-edit.component.html',
-  styleUrls: ['./shopping-edit.component.css'],
+  styleUrls: ['./shopping-edit.component.css']
 })
 export class ShoppingEditComponent implements OnInit, OnDestroy {
-  public shoppingListForm: FormGroup;
+  @ViewChild('f', { static: false }) slForm: NgForm;
+  subscription: Subscription;
+  editMode = false;
+  editedItem: Ingredient;
 
-  editSubscription: Subscription;
-  edittedItem: Ingredient;
-  editMode: boolean = false;
-  edittedItemIndex: number;
+  constructor(
+    private store: Store<fromApp.AppState>
+  ) {}
 
-  constructor(private shoppingListService: ShoppingListService) {}
-
-  ngOnInit(): void {
-    this.shoppingListForm = new FormGroup({
-      name: new FormControl(null, [
-        Validators.required,
-        Validators.pattern('^[A-Za-z0-9]*$'),
-      ]),
-      amount: new FormControl(null, [
-        Validators.pattern('^[0-9]*$'),
-        Validators.required,
-      ]),
-    });
-    this.editSubscription = this.shoppingListService.stratedEditing.subscribe(
-      (index: number) => {
-        this.edittedItemIndex = index;
-        this.editMode = true;
-        this.edittedItem = this.shoppingListService.getIngredients(index);
-        this.shoppingListForm.setValue({
-          name: this.edittedItem.name,
-          amount: this.edittedItem.amount,
-        });
-      }
-    );
+  ngOnInit() {
+    this.subscription = this.store
+      .select('shoppingList')
+      .subscribe(stateData => {
+        if (stateData.editedIngredientIndex > -1) {
+          this.editMode = true;
+          this.editedItem = stateData.editedIngredient;
+          this.slForm.setValue({
+            name: this.editedItem.name,
+            amount: this.editedItem.amount
+          });
+        } else {
+          this.editMode = false;
+        }
+      });
   }
 
-  onIngredientSubmit() {
-    const ingredient = new Ingredient(
-      this.shoppingListForm.get('name').value,
-      this.shoppingListForm.get('amount').value
-    );
+  onSubmit(form: NgForm) {
+    const value = form.value;
+    const newIngredient = new Ingredient(value.name, value.amount);
     if (this.editMode) {
-      this.shoppingListService.updateIngredient(
-        this.edittedItemIndex,
-        ingredient
+      // this.slService.updateIngredient(this.editedItemIndex, newIngredient);
+      this.store.dispatch(
+        new ShoppingListActions.UpdateIngredient(newIngredient)
       );
     } else {
-      this.shoppingListService.onItemAdded(ingredient);
+      // this.slService.addIngredient(newIngredient);
+      this.store.dispatch(new ShoppingListActions.AddIngredient(newIngredient));
     }
-    this.onClear();
+    this.editMode = false;
+    form.reset();
   }
 
   onClear() {
-    this.shoppingListForm.reset();
+    this.slForm.reset();
     this.editMode = false;
+    this.store.dispatch(new ShoppingListActions.StopEdit());
   }
 
   onDelete() {
-    this.shoppingListService.deleteIngredient(this.edittedItemIndex);
+    // this.slService.deleteIngredient(this.editedItemIndex);
+    this.store.dispatch(new ShoppingListActions.DeleteIngredient());
     this.onClear();
   }
 
-  ngOnDestroy(): void {
-    this.editSubscription.unsubscribe();
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+    this.store.dispatch(new ShoppingListActions.StopEdit());
   }
 }
